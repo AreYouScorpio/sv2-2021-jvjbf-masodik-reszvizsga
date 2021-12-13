@@ -2,32 +2,25 @@ package city;
 
 public class Home extends Building{
 
-    public final int SQUARE_METERS_NEED_PER_PERSON = 20;
+    public static final int SQUARE_METERS_NEED_PER_PERSON = 20;
 
-    public Home(int fullArea, int floors, Address address) {
-        super(fullArea, floors, address);
-        if (floors>3) throw new IllegalArgumentException("Too big house");
-
-    }
-
-
-    public Home(int fullArea, String address) {
-        super(fullArea, address);
+    public Home(int fullArea, int levels, Address address) {
+        super(fullArea, levels, address);
+        if (levels>3) throw new IllegalArgumentException("Too big house");
 
     }
 
-    public Home(int area, int floors, Address main) {
-        super();
-    }
 
-    public Home(int area, Address address) {
+    public Home(int fullArea, Address address) {
+        this(fullArea,1, address);
 
     }
+
 
 
 
     @Override
     public int calculateNumberOfPeopleCanFit() {
-        return 0;
+        return (int)(Math.floor(this.getFullArea()/SQUARE_METERS_NEED_PER_PERSON));
     }
 }

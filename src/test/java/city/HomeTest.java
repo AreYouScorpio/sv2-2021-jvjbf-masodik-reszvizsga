@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class HomeTest {
 
-/*
+
     Building home = new Home(121, 2, new Address("Main", 12));
 
     @Test
@@ -46,5 +46,5 @@ class HomeTest {
         assertEquals(12, home.calculateNumberOfPeopleCanFit());
     }
 
-     */
+
 }
