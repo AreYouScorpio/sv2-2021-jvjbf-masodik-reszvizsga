@@ -48,7 +48,7 @@ public class City {
     public List<Building> findBuildingsByStreet(String lookAddress){
         List<Building> result = new ArrayList<>();
         for (Building b : buildings) {
-            if (b.getAddress().equals(lookAddress)) result.add(b);
+            if (b.getAddress().getStreet().equals(lookAddress)) result.add(b);
         }
         return result;
     }
