@@ -1,4 +1,4 @@
-ppackage algorithms;
+package algorithms;
 
 import org.junit.jupiter.api.Test;
 
@@ -16,6 +16,7 @@ class WordsTest {
 
         assertEquals(0, words.getWords().size());
     }
+
 
     @Test
     void addCorrectWordsTest() {

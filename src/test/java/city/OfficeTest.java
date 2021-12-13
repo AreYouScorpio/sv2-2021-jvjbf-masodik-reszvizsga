@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class OfficeTest {
+    /*
     Building office = new Office(132, 7, new Address("Main", 1), "Sony", 33);
 
     @Test
@@ -38,5 +39,7 @@ class OfficeTest {
     void testNumberOfPeopleCanFit() {
         assertEquals(198, office.calculateNumberOfPeopleCanFit());
     }
+
+     */
 
 }
