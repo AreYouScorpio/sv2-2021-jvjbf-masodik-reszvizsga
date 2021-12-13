@@ -8,7 +8,9 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CityTest {
-/*
+
+    /*
+
     City city;
 
     @BeforeEach
@@ -30,7 +32,7 @@ class CityTest {
         assertEquals(300000L, city.getFullArea());
         assertEquals(0, city.getBuildings().size());
     }
-
+/*
     @Test
     void testAddBuilding() {
         City city = new City("Budapest", 300000L);

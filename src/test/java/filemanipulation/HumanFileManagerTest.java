@@ -14,8 +14,6 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 class HumanFileManagerTest {
-    /*
-
     @TempDir
     File tempFolder;
 
@@ -27,15 +25,15 @@ class HumanFileManagerTest {
     }
 
     @Test
-    void readFileTest() {
+    void readFileTest() throws IOException {
         HumanFileManager hfm = new HumanFileManager();
-
         hfm.readHumansFromFile(Paths.get("src/test/resources/humanstest.csv"));
 
         assertEquals(7, hfm.getHumans().size());
         assertEquals("Jane Doe", hfm.getHumans().get(2).getName());
         assertEquals("2637483491", hfm.getHumans().get(2).getIdentityNumber());
     }
+
 
     @Test
     void readFileWithWrongPathTest() {
@@ -63,5 +61,4 @@ class HumanFileManagerTest {
         assertEquals("Jonathan Doe;323123232", result.get(2));
     }
 
-     */
 }
