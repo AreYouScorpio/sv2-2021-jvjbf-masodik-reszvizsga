@@ -4,7 +4,7 @@ public class Home extends Building{
 
     public final int SQUARE_METERS_NEED_PER_PERSON = 20;
 
-    public Home(int fullArea, int floors, String address) {
+    public Home(int fullArea, int floors, Address address) {
         super(fullArea, floors, address);
         if (floors>3) throw new IllegalArgumentException("Too big house");
 
@@ -23,6 +23,8 @@ public class Home extends Building{
     public Home(int area, Address address) {
 
     }
+
+
 
     @Override
     public int calculateNumberOfPeopleCanFit() {

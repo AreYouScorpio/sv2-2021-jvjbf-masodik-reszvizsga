@@ -1,20 +1,20 @@
 package city;
 
 public abstract class Building {
-    int fullArea;
     int area;
     int levels;
-    String address;
+    Address address;
 
-    public Building(int area, int floors, String address) {
-        this.fullArea = area;
-        this.levels = floors;
+    public Building(int area, int levels, Address address) {
+        this.area = area;
+        this.levels = levels;
         this.address = address;
     }
 
-    public Building(int area, String address) {
-        this.fullArea = area;
+    public Building(int area, Address address) {
+        this.area = area;
         this.address = address;
+        this.levels=1;
     }
 
     public Building() {
@@ -22,7 +22,7 @@ public abstract class Building {
     }
 
     public int getFullArea() {
-        return fullArea* levels;
+        return area* levels;
     }
 
     public int getLevels() {
@@ -33,7 +33,7 @@ public abstract class Building {
         return area;
     }
 
-    public String getAddress() {
+    public Address getAddress() {
         return address;
     }
 
