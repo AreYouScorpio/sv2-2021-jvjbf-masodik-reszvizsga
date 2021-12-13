@@ -9,6 +9,9 @@ public class Office extends Building {
         super(area,levels,address);
         this.company=company;
         this.numberOfTablesPerLevel=numberOfTablesPerLevel;
+        double areaPerTable=area/numberOfTablesPerLevel;
+        if(areaPerTable<2||areaPerTable>5)
+          throw new IllegalArgumentException("Wrong table number.");
     }
 
     public String getCompany(){
