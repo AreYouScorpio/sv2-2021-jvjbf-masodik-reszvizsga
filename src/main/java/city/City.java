@@ -52,4 +52,11 @@ public class City {
         return result;
     }
 
+    public boolean isThereBuildingWithMorePeopleThan(int numberOfPeople){
+        for (Building b: buildings){
+            if (b.calculateNumberOfPeopleCanFit()>=numberOfPeople) return true;
+        }
+        return false;
+    }
+
 }
