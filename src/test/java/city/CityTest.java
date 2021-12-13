@@ -31,7 +31,7 @@ class CityTest {
         assertEquals(300000L, city.getFullArea());
         assertEquals(0, city.getBuildings().size());
     }
-/*
+
     @Test
     void testAddBuilding() {
         City city = new City("Budapest", 300000L);
@@ -79,5 +79,4 @@ class CityTest {
         assertFalse(city.isThereBuildingWithMorePeopleThan(496));
     }
 
- */
 }

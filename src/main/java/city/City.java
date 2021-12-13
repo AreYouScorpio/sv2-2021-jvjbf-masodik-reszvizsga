@@ -30,4 +30,17 @@ public class City {
        {throw new IllegalArgumentException("City can't be larger than "+this.fullArea);}
 
     }
+
+    public Building findHighestBuilding(){
+        int max=0;
+        Building maxBuilding;
+        for (int i=0; i<buildings.size();i++){
+            if (buildings.get(i).getLevels()>max) {
+                max=buildings.get(i).getLevels();
+                maxBuilding=buildings.get(i);
+            }
+        }
+        return maxBuilding;
+    }
+
 }
