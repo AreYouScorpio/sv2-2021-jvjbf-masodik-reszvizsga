@@ -9,6 +9,7 @@ public class City {
     private List<Building> buildings;
 
     public City(String cityName, long q) {
+        this.buildings=new ArrayList<>();
         this.cityName = cityName;
         this.fullArea = q;
     }
@@ -54,7 +55,7 @@ public class City {
 
     public boolean isThereBuildingWithMorePeopleThan(int numberOfPeople){
         for (Building b: buildings){
-            if (b.calculateNumberOfPeopleCanFit()>=numberOfPeople) return true;
+            if (b.calculateNumberOfPeopleCanFit()>numberOfPeople) return true;
         }
         return false;
     }
