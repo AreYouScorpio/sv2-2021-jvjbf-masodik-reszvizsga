@@ -5,7 +5,7 @@ public class Office extends Building {
     private String company;
     private int numberOfTablesPerLevel;
 
-    public Office(int area, int levels, Address address, String company, int numberOfTablesPerLevel) {
+    public Office(int area, int levels, Address address, String company, int numberOfTablesPerLevel) throws IllegalArgumentException {
         super(area,levels,address);
         this.company=company;
         this.numberOfTablesPerLevel=numberOfTablesPerLevel;
